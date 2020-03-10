@@ -3,6 +3,8 @@ const express = require("express"),
     bodyParser = require("body-parser"),
     request = require("request");
 
+
+const apiKey =  "58f0a4b15abd2bf32cb1ef37b8c261e4-us19";
 const port = 7000; // !!!!!!!!! IMPORT when using inconjuntion with LiverServer extention!!!! 
 const app = express();
 
@@ -28,4 +30,7 @@ app.listen(port,function(){
     console.log(`Server Port: ${port}`);
 });
 
+
+// API key 
+// 58f0a4b15abd2bf32cb1ef37b8c261e4-us19
 
