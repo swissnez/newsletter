@@ -5,6 +5,7 @@ const express = require("express"),
 
 
 const apiKey =  "58f0a4b15abd2bf32cb1ef37b8c261e4-us19";
+const listID = "cb7122f618";
 const port = 7000; // !!!!!!!!! IMPORT when using inconjuntion with LiverServer extention!!!! 
 const app = express();
 
@@ -23,7 +24,30 @@ app.post("/",function(req,res){
     let email = req.body.email;
 
     let JSONDump = JSON.stringify(req.body);
-    res.send(JSON.stringify(req.body));
+    //res.send(JSON.stringify(req.body));
+
+
+    // Create a new object
+
+    var data = {
+        
+        members: [
+            {
+                email_address: "",
+                status: "subscribed",
+                merge_fields: {
+                    FNAME: firstName,
+                    LNAME: lastName
+                }
+            }
+
+        ]
+
+    };
+
+    let JSONFlatPack = JSON.stringify(data);
+    res.send(JSONFlatPack);
+
 });
 
 app.listen(port,function(){
