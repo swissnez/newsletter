@@ -4,7 +4,7 @@ const express = require("express"),
     request = require("request");
 
 
-const apiKey =  "58f0a4b15abd2bf32cb1ef37b8c261e4-us19";
+
 const listID = "cb7122f618";
 const port = 7000; // !!!!!!!!! IMPORT when using inconjuntion with LiverServer extention!!!! 
 const app = express();
@@ -56,5 +56,5 @@ app.listen(port,function(){
 
 
 // API key 
-// 58f0a4b15abd2bf32cb1ef37b8c261e4-us19
+
 
