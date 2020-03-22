@@ -9,7 +9,7 @@ const express = require("express"),
     superagent = require("superagent"); // Another RESTful api agent
 
 
-const mailchimpApiKey = "";
+const mailchimpApiKey = "bf499027efd7b937bd6c8c7253ee833f-us19";
 const mailchimpInstance = "us19";
 const listID = "cb7122f618";
 const url = `https://${mailchimpInstance}.api.mailchimp.com/3.0/lists/${listID}`;
