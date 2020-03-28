@@ -1,14 +1,13 @@
 //jshint esversion:6
 
-//import {mailchimpApiKey} from "./key.js";
 
 const express = require("express"),
     bodyParser = require("body-parser"),
     request = require("request"),
     https = require("https"), // Node version RESTful api
     superagent = require("superagent"); // Another RESTful api agent
-
-
+    //mailchimpApiKey = require("./keys");
+    //import mailchimpApiKey from "/keys";
 
 const mailchimpInstance = "us19";
 const listID = "cb7122f618";
